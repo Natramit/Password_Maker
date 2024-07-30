@@ -62,8 +62,8 @@ int main(int put_in, char** words[]) {
 		p++, i++, p1++;
 	}
 	*p = 0, * (p - 1) = 0, * (p - 2) = 0, * (p - 3) = 0, * (p - 4) = 0;
-	system(title_p);
-	system("color 8b");
+	//system(title_p);
+	//system("color 8b");
 	//if (title[0] == 'p' && title[1] == 'a' && title[2] == 's' && title[3] == 's' && title[4] == 'w' && title[5] == 'o' && title[6] == 'r' && title[7] == 'd' && title[8] == ' ' && title[9] == 'm' && title[10] == 'a' && title[11] == 'k' && title[12] == 'e' && title[13] == 'r' && (title[14] == '-' || title[14] == ' ' || title[14] == '_' || title[14] == '+') && (title[14] == '+' || title[15] == '+' || (title[15] == 'p' && title[16] == 'l' && title[17] == 'u' && title[18] == 's') || (title[15] == 'p' && title[16] == 'o' && title[17] == 'w' && title[18] == 'e' && title[19] == 'r')))
 		//if_plus = 1;
 	if_finded(title, ctrl0, find);
@@ -88,6 +88,8 @@ int main(int put_in, char** words[]) {
 		find[9] = 0;
 	}
 	if (put_in <= 1) {
+		system(title_p);
+		system("color 8b");
 		if_mask_ready = select_language(put_in,if_reset);
 		//help at here is old
 		if_mask_ready = ctr_number_maker(put_in, &if_reset);
