@@ -21,7 +21,7 @@ The argument invoked by the command will override the filename parameter.
 
 Parameter|Eexplain
 ----|----
-!|Disabled ! If you want to limit multiple characters, please use all of them!.
+!|Disable character. If you limit multiple characters, use the ! before each character.
 +<br>Poewr<br>Plus|Enable the enhanced mode to expand the generated character capacity and obtain higher password complexity.
 Weighted<br>Balanced|If the weighting algorithm is enabled, the selection of character types will receive a bonus to the total number of characters of that type, so as to achieve a balance of type allocation.
 Local|If the localization mode is enabled, the password will be changed after the software is migrated to a different directory, so please use it carefully.
