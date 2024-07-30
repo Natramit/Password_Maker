@@ -103,19 +103,13 @@ input:
 	if (put_in <= 1) {
 		if (if_help != 1) {
 			printf(line.l1);
-			/*if (language == 1)printf("\n请输入平台名称：");
-			else printf("\nPlease enter a platform name:");
-			*/
+			//printf("\nPlease enter a platform name:");
 			printf(lang[language].platform_name);
 			sum_paas = autoputin(paas,100);
-			/*if (language == 1)printf("\n请输入账户名称：");
-			else printf("\nPlease enter an account name:");
-			*/
+			//printf("\nPlease enter an account name:");
 			printf(lang[language].account_name);
 			autoputin(name,100);
-			/*if (language == 1)printf("\n密码格式空缺则使用默认格式，输入数字则限制密码位数(最大不超过256位），输入其它内容自动识别格式。\n请输入密码格式：");
-			else printf("\nIf the password format is blank, the default format is used\n    , and entering a number limits the number of digits in the password (maximum 256 digits)\n    , enter other content to automatically recognize the format.\n\nPlease enter the password format:");
-			*/
+			//printf("\nIf the password format is blank, the default format is used\n    , and entering a number limits the number of digits in the password (maximum 256 digits)\n    , enter other content to automatically recognize the format.\n\nPlease enter the password format:");
 			printf(lang[language].password_format);
 			autoputin(format,256);
 		}
@@ -194,26 +188,21 @@ input:
 	if (put_in <= 1)printf("\n");
 	printf(line.l4);
 	if (if_help != 1) {
-		/*if (language == 1)printf("\n请确认如下数据是否正确：\n登录平台：");
-		else printf("\nPlease confirm that the following data is correct:\nPlatform Name  :");
-		*/
+		//printf("\nPlease confirm that the following data is correct:\nPlatform Name  :");
 		printf(lang[language].chack_platform_name);
 		for (int i = 0;;) {
 			if (paas[i] == 0 || paas[i] == 10)break;
 			printf("%c", (char)paas[i]);
 			i++;
 		}
-		/*if (language == 1)printf("\n账号名称：");
-		else printf("\nAccount  Name  :");
-		*/
+		//printf("\nAccount  Name  :");
 		printf(lang[language].chack_account_name);
 		for (int i = 0;;) {
 			if (name[i] == 0 || name[i] == 10)break;
 			printf("%c", (char)name[i]);
 			i++;
 		}
-		//if (language == 1)printf("\n密码格式：");
-		//else printf("\nPassword Normat:");
+		//printf("\nPassword Normat:");
 		printf(lang[language].chack_password_format);
 		for (int i = 0;;) {
 			if (format[i] == 0 || format[i] == 10)break;
@@ -232,12 +221,10 @@ input:
 		if (if_local)printf("  Local");
 		//-------------------------------------------------------------------------------------------------------------------------------
 compute:
-		//if (language == 1)printf("\n\n    计算中...");
-		//else printf("\n\n    Calculating...");
+		// printf("\n\n    Calculating...");
 		printf(lang[language].createing);
 		password_maker(paas, name, format, password, if_plus, if_weighted, local_mix,char_no);
-		//if (language == 1)printf("\n\n密码为：");
-		//else printf("\n\n[ Password ] :");
+		//printf("\n\n[ Password ] :");
 		printf(lang[language].password);
 
 		for (int i = 0;;) {
@@ -246,8 +233,7 @@ compute:
 			printf("%c", (char)password[i]);
 			i++;
 		}
-		//if (language == 1)printf("\n\n                                                                                                       计算结束。");
-		//else printf("\n\n                                                                                                         Done.");
+		//printf("\n\n                                                                                                         Done.");
 		printf(line.null);
 		printf(lang[language].done);
 	}
