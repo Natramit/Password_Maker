@@ -8,7 +8,7 @@ This program can be used to generate complex passwords, and using the same param
 This program is installed on the surface, runs entirely locally, does not obtain or upload any data, only generates a configuration file locally, and the file is unique (if the same parameters are used, it is the same and can be used to migrate the software).
 This program generates passwords based on the class hashing algorithm, and does not store the results and their generation parameters, but when using command calls, please pay attention to the command records clearly to avoid leaking the generated parameters.
 
-# Useing
+# Using
 This program supports direct startup and command invocation.
 Example command:<br>
 `./Password_Maker.exe Platform_Name Account_Name AA1111111111A !<`
